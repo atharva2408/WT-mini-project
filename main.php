@@ -41,7 +41,6 @@
 <section class="home" id="home">
 
     <div class="image">
-        <!-- <img src="image/walkingdog1.gif" alt=""> -->
         <img src="image/girl-hugs-dog-cartoon.avif" alt="">
         
     </div>
@@ -50,7 +49,7 @@
         
         <h3>Welcome to Puppyhut!</h3>
         <p>Puppyhut is a Dog Adoption business located in Pune, MH that provides loving homes to abandoned and rescued pups. All puppies are vaccinated. spayed/neutered, and come with a complete health check. Visit us today and find your new best friend!</p>
-        <a href="#" class="btn"> contact us <span class="fas fa-chevron-right"></span> </a>
+        <!-- <a href="#" class="btn"> contact us <span class="fas fa-chevron-right"></span> </a> -->
     </div>
 
 </section>
@@ -78,12 +77,6 @@
         <h3>500+</h3>
         <p>happy rescuers</p>
     </div>
-
-    <!-- <div class="icons">
-        <i class="fas fa-hospital"></i>
-        <h3>80+</h3>
-        <p>available hospitals</p>
-    </div> -->
 
 </section>
 
@@ -161,36 +154,18 @@
             <img src="image/puppy1.jpg" alt="">
             <h3>luffy</h3>
             <span>mixed breed</span>
-            <!-- <div class="share">
-                <a href="#" class="fab fa-facebook-f"></a>
-                <a href="#" class="fab fa-twitter"></a>
-                <a href="#" class="fab fa-instagram"></a>
-                <a href="#" class="fab fa-linkedin"></a>
-            </div> -->
         </div>
 
         <div class="box">
             <img src="image/puppy5.jpg" alt="">
             <h3>cooper</h3>
             <span>labrador</span>
-            <!-- <div class="share">
-                <a href="#" class="fab fa-facebook-f"></a>
-                <a href="#" class="fab fa-twitter"></a>
-                <a href="#" class="fab fa-instagram"></a>
-                <a href="#" class="fab fa-linkedin"></a>
-            </div> -->
         </div>
 
         <div class="box">
             <img src="image/puppy4.jpg" alt="">
             <h3>daisy</h3>
             <span>Australian cattle dog</span>
-            <!-- <div class="share">
-                <a href="#" class="fab fa-facebook-f"></a>
-                <a href="#" class="fab fa-twitter"></a>
-                <a href="#" class="fab fa-instagram"></a>
-                <a href="#" class="fab fa-linkedin"></a>
-            </div> -->
         </div>
 
     
@@ -324,14 +299,14 @@
             $database = "mini_project";
 
             $conn = mysqli_connect($servername, $username, $password, $database);
-            echo "Connection successfull <br>" ;
+            // echo "Connection successfull <br>" ;
 
             $sql = "INSERT INTO `member` (`Name`, `Contact_no`, `Email`) VALUES ('$name', '$contact', '$email');" ;
             $result = mysqli_query($conn,$sql);
 
 
             if($result){
-                echo "Record entered successfully ";
+                // echo "Record entered successfully ";
             }
             else{
                 // echo "Record failed to entered";
